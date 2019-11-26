@@ -86,7 +86,7 @@ void loop()
                     client.println("Content-Type: text/html");
                     client.println("Connection: close");  // the connection will be closed after completion of the response
                     client.println();
-                    client.println("arduino_temperature{sensor=\"ds18b20\",mac=\"" + String(mac_string) + "\"} " + String(temp) + "\n");
+                    client.print("arduino_temperature{sensor=\"ds18b20\",mac=\"" + String(mac_string) + "\"} " + String(temp) + "\n");
                     break;
                 }
 
