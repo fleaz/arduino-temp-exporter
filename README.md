@@ -15,3 +15,8 @@ Modify the `src/main.cpp` file and set `STATIC` to 1 or 0 depending if you want 
 ## Installation
 This project was intendet to be build and flashed with [Platformio](https://platformio.org/). When you have it
 installed you can run `platformio run` to get all dependencies and `platformio run -t upload` to compile&uploda to your Arduino
+
+## Exposed metrics
+```
+arduino_temperature{sensor="ds18b20",mac="de:ad:be:ef:fe:ed"} 27.44
+```
